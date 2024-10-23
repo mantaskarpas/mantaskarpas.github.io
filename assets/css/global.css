@@ -12,10 +12,12 @@ input, button, textarea, select { font: inherit }
 /* ====== PADDING AROUND CONTENT ======  */
 
 /* Desktops/Laptops */
-@media (min-width: 768px) { body { padding: 4% 20% } }
+@media (min-width: 768px) 
+    { body { padding: 4% 20% } }
 
 /* Mobiles */
-@media (max-width: 767px) { body { padding: 12% 8% } }
+@media (max-width: 767px) 
+ { body { padding: 12% 8% } }
 
 body {
     text-align: center;
