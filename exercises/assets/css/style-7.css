@@ -4,18 +4,14 @@
 html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
 scroll-behavior: smooth; scroll-padding-top: 20px }
 body { line-height: 1.5; min-height: 100vh }
-@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
-@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
 img { width: 100%; height: auto; display: block }
 input, button, textarea, select { font: inherit }
+@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
+@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
 
-/* === CUSTOM PROPERTIES === */
+/* ============ CUSTOM PROPERTIES ============  */
+
 :root {
-
-
-      /* colors */
-
-      
     /* Color variables */
     --black-000: #000000;
     --white-000: #ffffff;
@@ -237,10 +233,11 @@ input, button, textarea, select { font: inherit }
     --font-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 
     /* Alternatives to default monospace font font-family */
-    --font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+    --font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-    --global-font: var(--font-serif);
-
+    --global-font: var(--font-sans);
+    
+    /* Fluid font sizes */
     --fs-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
     --fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
     --fs-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
@@ -251,64 +248,79 @@ input, button, textarea, select { font: inherit }
 
 }
 
+/* ================= ENDS ================ */
 
-body{
+/* Web page */
+body { 
     font-family: var(--global-font);
-    background-color: lightblue;
 }
 
-/* Desktops */
-@media (min-width: 768px) {
-    section { padding: 4% 20% }
-}
-                        
-/* Mobiles */
-@media (max-width: 767px) {
-    section { padding: 8% 5% }
+
+/* HEADER */
+header { 
+    display: flex; flex-direction: column; justify-content: space-around;
+    align-items: center; padding: 20px 0;
+    margin-left:auto; margin-right:auto; width: 100%;
+    background-color: var(--purple-800);
 }
 
-h2 {
+@media (min-width: 1025px) { header { padding: 3% 22% 5% 22% } }
+@media (min-width: 768px) and (max-width: 1024px) { header { padding: 5% 20% } }
+@media (max-width: 767px) { header { padding: 32px 9% 32px 9% } }
+
+header *:last-child { margin-bottom: 0 !important }
+
+
+
+/* Main heading */
+h1 {
+	font-family: var(--font-serif);
+	font-weight: normal;
     font-size: var(--fs-xxl);
-    margin-bottom: 4px;
-    color: blue;
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 1.2;
+    color: #fff;
 }
 
-h3 {
+/* Small headings */
+h2 {
+    color: #5b569a;    
+    font-weight: normal;
+    color: var(--trend-050);
     font-size: var(--fs-lg);
-    margin-bottom: 4px;
+    text-align:center;
+    margin-bottom: 42px;
+    line-height: 1.2;
 }
 
+
+
+/* SECTIONS */
+section { background-color: var(--trend-050) }
+
+/* Padding around content */
+@media (min-width: 1025px) { section { padding: 4% 24% } }
+@media (min-width: 768px) and (max-width: 1024px) { section { padding: 5% 20% } }
+@media (max-width: 767px) { section { padding: 32px 9% 32px 9% } }
+
+section *:last-child { margin-bottom: 0 !important }
+
+/* Smaller headings */
+h3 {
+	font-family: var(--font-serif);
+    font-weight: bold;
+	font-size: var(--fs-xl);
+    color: var(--purple-800);
+    margin-top: 32px;
+    margin-bottom: 2px;
+}
+
+/* Text paragraphs */
 p {
-    font-size: var(--fs-md);
-    margin-bottom: 16px;
-    font-family: var(--global-font);
+    font-size: calc(var(--fs-base) * 1.1);
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
-a{
-    color: blue;
-}
-
-.section-1{
-    background-color: var(--trend-300);
-}
-
-.section-2{
-    background-color: var(--sky-200);
-}
-
-.section-3{
-    background-color: var(--lime-300);
-}
-
-.section-4{
-    background-color: var(--trend-700);
-}
-
-.section-4 h2,
-.section-4 p {
-    color: white;
-}
-
-.section-5{
-    background-color: var(--purple-300);
-}

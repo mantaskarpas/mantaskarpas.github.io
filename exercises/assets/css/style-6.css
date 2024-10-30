@@ -4,18 +4,14 @@
 html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
 scroll-behavior: smooth; scroll-padding-top: 20px }
 body { line-height: 1.5; min-height: 100vh }
-@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
-@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
 img { width: 100%; height: auto; display: block }
 input, button, textarea, select { font: inherit }
+@media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
+@media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
 
-/* === CUSTOM PROPERTIES === */
+/* ============ CUSTOM PROPERTIES ============  */
+
 :root {
-
-
-      /* colors */
-
-      
     /* Color variables */
     --black-000: #000000;
     --white-000: #ffffff;
@@ -237,10 +233,11 @@ input, button, textarea, select { font: inherit }
     --font-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
 
     /* Alternatives to default monospace font font-family */
-    --font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; 
+    --font-monospace: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 
-    --global-font: var(--font-serif);
-
+    --global-font: var(--font-sans);
+    
+    /* Fluid font sizes */
     --fs-sm: clamp(0.8rem, 0.17vi + 0.76rem, 0.89rem);
     --fs-base: clamp(1rem, 0.34vi + 0.91rem, 1.19rem);
     --fs-md: clamp(1.25rem, 0.61vi + 1.1rem, 1.58rem);
@@ -251,64 +248,113 @@ input, button, textarea, select { font: inherit }
 
 }
 
+/* ================= ENDS ================ */
 
-body{
+/* Web page */
+body { 
     font-family: var(--global-font);
-    background-color: lightblue;
 }
 
-/* Desktops */
-@media (min-width: 768px) {
-    section { padding: 4% 20% }
-}
-                        
-/* Mobiles */
-@media (max-width: 767px) {
-    section { padding: 8% 5% }
+/* HEADER */
+header { 
+    display: flex; flex-direction: column; justify-content: space-around;
+    align-items: center; padding: 20px 0;
+    margin-left:auto; margin-right:auto; width: 100%;
+    background-color: #fff;
 }
 
+@media (min-width: 1025px) { header { padding: 3% 22% 5% 22% } }
+@media (min-width: 768px) and (max-width: 1024px) { header { padding: 5% 20% } }
+@media (max-width: 767px) { header { padding: 32px 9% 32px 9% } }
+
+header *:last-child { margin-bottom: 0 !important }
+
+body { font-family: sans-serif;}
+
+/* Main heading */
+h1 {
+	font-weight: bold;
+    font-size: var(--fs-xxxl);
+    color: var(--rose-800);
+    text-align: center;
+    line-height: 1.2;    
+    margin-bottom: 30px;
+}
+
+/* Small headings */
 h2 {
-    font-size: var(--fs-xxl);
-    margin-bottom: 4px;
-    color: blue;
-}
-
-h3 {
+    font-weight: bold;
     font-size: var(--fs-lg);
-    margin-bottom: 4px;
+    color: var(--purple-700);
+    text-align: center;
+    line-height: 1.3;    
+    margin-bottom: 42px;
 }
 
+
+/* SECTIONS */
+section { background-color: var(--green-200) }
+
+/* Padding around content */
+@media (min-width: 1025px) { section { padding: 4% 24% } }
+@media (min-width: 768px) and (max-width: 1024px) { section { padding: 5% 20% } }
+@media (max-width: 767px) { section { padding: 32px 9% 32px 9% } }
+
+section *:last-child { margin-bottom: 0 !important }
+
+.watermelon {
+    background-color: var(--pink-200);
+    text-align: center;
+}
+
+.watermelon h3 {
+    color: var(--pink-800);
+    margin-bottom: 12px;
+}
+.apple {
+    background-color: var(--green-200);
+    text-align: center;
+}
+
+.apple h3 {
+    color: var(--green-800);
+}
+
+.blueberry {
+    background-color: var(--purple-700);
+    text-align: center;
+}
+
+.blueberry h3, .blueberry p {
+    color: var(--purple-100);
+}
+
+.lemon {
+    background-color: var(--yellow-200);
+    text-align: center;
+}
+
+.lemon h3 {
+    color: var(--yellow-700);
+}
+
+/* Smaller headings */
+h3 {
+    font-weight: bold;
+    font-size: var(--fs-xl);
+    text-align: center;
+    line-height: 1.3; 
+    letter-spacing:2px;
+    margin-bottom: 2px;
+}
+
+/* Text paragraphs */
 p {
     font-size: var(--fs-md);
-    margin-bottom: 16px;
-    font-family: var(--global-font);
+    text-align: center;
+    line-height: 1.6;
+    margin-top:0;
+    margin-bottom: 32px;
+    color: var(--gray-800);
 }
 
-a{
-    color: blue;
-}
-
-.section-1{
-    background-color: var(--trend-300);
-}
-
-.section-2{
-    background-color: var(--sky-200);
-}
-
-.section-3{
-    background-color: var(--lime-300);
-}
-
-.section-4{
-    background-color: var(--trend-700);
-}
-
-.section-4 h2,
-.section-4 p {
-    color: white;
-}
-
-.section-5{
-    background-color: var(--purple-300);
-}
