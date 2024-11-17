@@ -3,7 +3,7 @@
 *, *::before, *::after { box-sizing: border-box }
 html { height: 100%; font-size: 100%; font: inherit; vertical-align: baseline;
 scroll-behavior: smooth; scroll-padding-top: 20px }
-body { line-height: 1.5; min-height: 100vh }
+body { line-height: 1.5; min-height: 100vh; background-color: lightgreen; }
 @media (max-width: 767px ) { body { text-rendering: optimizeSpeed } }
 @media (min-width: 768px ) { body { text-rendering: optimizeLegibility } }
 img { width: 100%; height: auto; display: block }
@@ -11,18 +11,19 @@ input, button, textarea, select { font: inherit }
 
 /* ====== PADDING AROUND CONTENT ======  */
 
-/* Desktops/Laptops */
-@media (min-width: 768px) 
-    { body { padding: 4% 20% } }
+/* Desktop */
+@media (min-width: 768px) {
+    body { padding: 4% 20% }
+}
 
 /* Mobiles */
-@media (max-width: 767px) 
- { body { padding: 12% 8% } }
+@media (max-width: 767px) {
+    body { padding: 8% 5% }
+}
 
 body {
     text-align: center;
     font-family: sans-serif;
-    background-color: lightgreen;
 }
 
 h1 {
@@ -54,6 +55,5 @@ p {
 }
 
 a{
-    color:darkgreen;
+    color: darkgreen;
 }
-
