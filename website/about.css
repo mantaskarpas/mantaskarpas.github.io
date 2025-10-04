@@ -58,97 +58,97 @@ body{
     color: white;
 }
 
-
-.logo {
+.logo{
     font-size: 1.5rem;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
-.nav-links {
+.nav-links{
     list-style: none;
     display: flex;
     gap: 1rem;
 }
 
-.nav-links li a {
+.nav-links li a{
     color: white;
     text-decoration: none;
     font-weight: 500;
-}   
-
-.nav-links li a:hover {
-    color: #3498db;
 }
+
+.nav-links li a:hover{
+    color: #3498db;
+} 
 
 header{
     background: #34495e;
     color: white;
     text-align: center;
-    padding: 2rem;    
+    padding: 2rem;
 }
 
-.contact-form-section,
-.quote-form-section{
-    max-width: 600px;
-    margin: 2rem auto;
+.about-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     padding: 2rem;
-    background: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.about-image{
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+.about-image img{
+    width: 100%;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-form label{
-    display: block;
-    margin-top: 1rem;
-    font-weight: 600;
+.about-text{
+    flex: 1 1 400px;
+    max-width: 600px;
 }
 
-form input,
-form textarea{
-    width: 100%;
-    padding: 0.75rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-form button{
+.about-text h2{
     margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
-    background: #3498db;
-    color: white;   
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
+    color: #2c3e50;
 }
 
-form button:hover{
-    background: #2980b9;
-}   
-
-footer {
-    background: #ecf0f1;
-    text-align: center; 
-    padding: 1rem;
-    font-size: 0.9rem;
+.about-text ul li {
+    margin: 0.5rem 0;
+    font-weight: 500;
 }
 
-.social-icons {
-    margin-top: 0.5rem;
-    display: flex;  
+.about-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.social-icons{
+    display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1rem;  
+    margin-top: 0.5rem;
 }
 
-.social-icons img {
+.social-icons a img{
     width: 32px;
     height: 32px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
-.social-icons img:hover {
+.social-icons a img:hover{
     transform: scale(1.1);
+}
+
+footer{
+    background: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 0.9rem;
 }

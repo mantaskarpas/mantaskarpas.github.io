@@ -26,11 +26,26 @@
   }
 }
 
-body {
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+body{
     font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background: #f9f9f9;
     color: #333;
 }
 
@@ -46,7 +61,6 @@ body {
 .logo{
     font-size: 1.5rem;
     font-weight: bold;
-    color: white;
 }
 
 .nav-links{
@@ -55,45 +69,7 @@ body {
     gap: 1rem;
     margin: 0;
     padding: 0;
-}
-
-@media (max-width: 1024px){
-  .menu-toggle{
-    display: block;
-  }
-
-  .nav-links { /*hamburger menu*/
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100%;
-    background-color: #2c3e50;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem;
-    transition: right 0.3s ease;
-    z-index: 1000;
-  }
-  
-  .nav-links.active{
-    right: 0;
-  }
-}
-
-@media (min-width: 1025px) {
-  .navlinks{
-    display: flex !important;
-    position: static;
-    height: auto;
-    background: none;
-    padding: 0;
-  }
-  
-  .menu-toggle{
-    display: none;
-  }
-}
+}   
 
 .nav-links li a{
     color: white;
@@ -111,37 +87,31 @@ header{
     color: white;
     text-align: center;
     padding: 2rem;
-}
+}   
 
-header h1 {
+header h1{
     margin-bottom: 0.5rem;
     font-size: 2.5rem;
-}
+}   
 
 header p{
     font-size: 1.2rem;
     margin-bottom: 1rem;
-}
+}   
 
-.cta-buttons button{
-    margin: 0.5rem;
-    padding: 0.75rem 1.5rem;
+header button {
+    padding : 0.75rem 1.5rem;
     font-size: 1rem;
+    background: #3498db;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background: #3498db;
-    color: white;
 }
 
-.features, .services, .testimonials{
+section {
     padding: 2rem;
     text-align: center;
-}
-
-.features li{
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
 }
 
 .service-grid{
@@ -151,14 +121,43 @@ header p{
     margin-top: 1rem;
 }
 
-.service-card{
+.service-card {
     background: white;
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
-.testimonials blockquote{
+.features ul,
+.use-cases ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.features li,
+.use-cases li {
+    margin: 0.5rem 0;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+th , td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+th{
+    background: #ecf0f1;
+}
+
+.testimonials blockquote {
     font-style: italic;
     margin: 1rem auto;
     max-width: 600px;
@@ -169,13 +168,6 @@ footer{
     text-align: center;
     padding: 1rem;
     margin-top: 0.9rem;
-}
-
-.why-choose {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 600px;
-    padding: 2rem;
 }
 
 .social-icons {
