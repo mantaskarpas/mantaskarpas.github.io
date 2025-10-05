@@ -2,9 +2,6 @@
 @media (max-width: 1024px) {
   .menu-toggle{
     display: block;
-    font-size: 2rem;
-    cursor: pointer;
-    color: white;
   }
 
   .nav-links{
