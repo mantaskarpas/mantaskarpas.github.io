@@ -1,72 +1,31 @@
-/*=== Responsive Hamburger Menu (<1024px)===*/
 @media (max-width: 1024px) {
-  .menu-toggle{
-    display: block;
-  }
-
-  .nav-links{
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100%;
-    background-color: #2c3e50;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem;
-    transition: right 0.3s ease;
-    z-index: 1000;
-  }
-
-  .nav-links.active{
-    right: 0;
-  }
-
   .navbar {
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
-}
-/*===================================*/
 
-/*=== Desktop Override (>1025px) ===*/
-@media (min-width: 1025px){
   .nav-links {
-    display: flex !important;
-    position: static;
-    height: auto;
-    background: none;
-    padding: 0;
-  }
-
-  .menu-toggle {
-    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
-/*=================================*/
-
 
 @media (max-width: 768px) {
-  .nav-links{
-    display: none;
+  .flex-row {
     flex-direction: column;
-    background-color: #003366;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 200px;
-    padding: 10px;
-    border-radius: 5px;
   }
 
-  .nav-links.active {
-    display: flex;
+  header, .btn {
+    text-align: center;
+    width: 100%;
   }
 
-  .hamburger{
-    display: flex;
+  .about-content {
+    flex-direction: column;
+    text-align: center;
   }
 }
-/*===============================*/
+
 @media (max-width: 480px) {
   body {
     font-size: 14px;
@@ -89,125 +48,36 @@ body{
     background-color: #f4f4f4;
     color: #333;
 }
-/*=== Desktop Navbar ===*/
+
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #2c3e50;
+    background-color: #2c3e50;
     padding: 1rem 2rem;
     color: white;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .logo{
     font-size: 1.5rem;
     font-weight: bold;
-    color: white;
 }
 
 .nav-links{
-   display: flex;
-   flex-direction: row;
-   gap: 1.5rem;
-   list-style: none;
-   padding: 0;
-   margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
 }
 
 .nav-links li a{
     color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
 }
 
 .nav-links li a:hover{
     color: #3498db;
-}
-/*=========================*/
-
-/*Hamburger icon hidden by default*/
-.menu-toggle{
-  display: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: white;
-}
-
-/* === Responsive Hambuger Menu (<1024px === */
-@media (max-width: 1024px){
-  .menu-toggle{
-    display: block;
-  }
-
-  .nav-links {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100%;
-    background-color: #2c3e50;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem;
-    transition: right 0.3s ease;
-    z-index: 1000;
-  }
-
-  .nav-links.active {
-    right: 0;
-  }
-
-  .navbar {
-    justify-content: space-between;
-  }
-}
-
-@media (max-width: 1024px){
-  .menu-toggle{
-    display: block;
-  }
-
-  .nav-links { 
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 70%;
-    height: 100%;
-    background-color: #2c3e50;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem;
-    transition: right 0.3s ease;
-    z-index: 1000;
-    display: none;
-  }
-  
-  .nav-links.active{
-    right: 0;
-    display: flex;
-  }
-
-  .navbar{
-    justify-content: space-between;
-  }
-}
-/*=== Desktop Override (>1025px) ===*/
-@media (min-width: 1025px) {
-  .navlinks{
-    display: flex !important;
-    position: static;
-    height: auto;
-    background: none;
-    padding: 0;
-  }
-  
-  .menu-toggle{
-    display: none;
-  }
-}
+} 
 
 header{
     background: #34495e;
