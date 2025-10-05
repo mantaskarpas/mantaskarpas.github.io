@@ -44,37 +44,30 @@
 }
 /*===============================*/
 
+
+
 @media (max-width: 768px) {
-  .flex-row {
+  .nav-links{
+    display: none;
     flex-direction: column;
+    background-color: #003366;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
   }
 
-  header, .btn {
-    text-align: center;
-    width: 100%;
+  .nav-links.active {
+    display: flex;
   }
 
-  .about-content {
-    flex-direction: column;
-    text-align: center;
+  .hamburger{
+    display: flex;
   }
 }
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  .btn {
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-  }
-}
-
+/*===============================*/
 body{
     font-family: 'Segoe UI', sans-serif;
     margin: 0;

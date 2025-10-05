@@ -139,7 +139,29 @@ body{
     justify-content: space-between;
   }
 }
+/*===============================*/
 
+@media (max-width: 768px) {
+  .nav-links{
+    display: none;
+    flex-direction: column;
+    background-color: #003366;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger{
+    display: flex;
+  }
+}
 
 header{
     background: #34495e;

@@ -20,3 +20,10 @@ document.addEventListener("DOMContentLoaded", function (){
         console.warn('Navbar toggle or nav-links not found. Check your HTML IDs');
     }
 });
+
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
