@@ -52,6 +52,14 @@
   color: white;
 }
 
+/*Hamburger icon hidden by default*/
+.menu-toggle{
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
 @media (max-width: 1024px){
   .menu-toggle{
     display: block;
@@ -77,6 +85,20 @@
 
   .navbar{
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1025px) {
+  .navlinks{
+    display: flex !important;
+    position: static;
+    height: auto;
+    background: none;
+    padding: 0;
+  }
+  
+  .menu-toggle{
+    display: none;
   }
 }
 

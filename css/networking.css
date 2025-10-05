@@ -96,6 +96,20 @@
   }
 }
 
+@media (min-width: 1025px) {
+  .navlinks{
+    display: flex !important;
+    position: static;
+    height: auto;
+    background: none;
+    padding: 0;
+  }
+  
+  .menu-toggle{
+    display: none;
+  }
+}
+
 
 
 @media (max-width: 480px) {

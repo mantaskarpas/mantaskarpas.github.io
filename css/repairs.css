@@ -95,6 +95,20 @@
   }
 }
 
+@media (min-width: 1025px) {
+  .navlinks{
+    display: flex !important;
+    position: static;
+    height: auto;
+    background: none;
+    padding: 0;
+  }
+  
+  .menu-toggle{
+    display: none;
+  }
+}
+
 
 body {
     font-family: 'Segoe UI', sans-serif;
