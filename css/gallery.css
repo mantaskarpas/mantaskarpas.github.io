@@ -28,6 +28,18 @@
 }
 /*===================================*/
 
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+
 /*=== Desktop Override (>1025px)===*/
 @media(min-width: 1025px) {
     .nav-links {

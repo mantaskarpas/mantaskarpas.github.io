@@ -45,20 +45,15 @@
 /*================================*/
 
 @media (max-width: 768px) {
-  .flex-row {
-    flex-direction: column;
+  .nav-links{
+    display: none;
   }
 
-  header, .btn {
-    text-align: center;
-    width: 100%;
-  }
-
-  .about-content {
-    flex-direction: column;
-    text-align: center;
+  .hamburger{
+    display: block;
   }
 }
+
 /*Hamburger icon hidden by default*/
 .menu-toggle{
   display: none;
