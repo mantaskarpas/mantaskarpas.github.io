@@ -2,138 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mantas Karpas ID: 78085 | Web Design and Development Portfolio</title>
-    <meta name="description" content="Check out some of my web design and development projects.">
-
-	<!-- Preload large image -->
-
-	<!-- Stylesheets -->
-    <link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css" />
-    <link rel="stylesheet" href="../assets/css/custom.css" />
-
-	<!-- Google Fonts -->
-
-    <!-- Font Awesome 6 icons. Delete if not using. -->
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">    
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">    
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">    
-    <link rel="manifest" href="assets/img/favicon_io/favicon-16x16.png">
-    
+    <title>AndriusTech | Home</title>
+    <meta name="description" content="Fast, reliable tech repair and IT support in Clondalkin, Dublin. Book your repair or get a free quote today.">
+    <meta name="keywords" content="tech repair Dublin, IT support Clondalkin, device repair, AndriusTech">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/styles.css">
 
 </head>
-
-
+<nav class="navbar">
+    <div class="logo">AndriusTech</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="repairs.html">Repairs</a></li>
+        <li><a href="networking.html">IT Support</a></li>
+        <li><a href="cloud-backup.html">Cloud & Backup</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 <body>
+    <header>
+        <h1>Fast, Reliable Tech Repairs & IT Support in Dublin</h1>
+        <p>From cracked screens to cloud backup, we do it all! We deliver expert service with a personal touch.</p>
+        <div class="cta-buttons">
+            <a href="contact.html" class="btn"><button onclick="bookRepair()">Book a Repair</button></a>
+            <a href="contact.html" class="btn"><button onclick="getQuote()">Get a Free Quote</button></a>
+        </div>
+    </header>
+    
+    <div class="why-choose">
+        <h2>Why Choose AndriusTech?</h2>
+        <ul>
+            <p>&#9989; Same-day repairs available</p>
+            <p>&#9989; Transparent pricing-no hidden fees</p>
+            <p>&#9989; Fast, friendly, and knowledgable technicians</p>
+            <p>&#9989; Certified technicians with years of experience</p>
+        </ul>
+    </div>
 
-    <!-- menu and 'hero block' header -->
-    <nav class="theme-dark"><div class="container-menu">
-        <a href="../index.html" class="brand">
-            <img src="../assets/img/favicon_io/favicon.ico" alt="Sample website logo"></a>
-        
-        <div class="container-menu-links">
-        
-        <div class="nav-toggle" id="nav-toggle-btn"><div class="bar-1"></div><div class="bar-2"></div><div class="bar-3"></div></div>
-            <ul class="links-wrapper">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../portfolio/index.html">Portfolio</a></li>
-                <li><a href="../store/index.html">Store</a></li>
-                <li><a class="btn btn-solid btn-soft" id="btn-cta" href="../contact/index.html"><span>Contact</span> <i class="fa-regular fa-envelope"></i></a></li>
-            </ul>
+    <section class="services">
+        <h2>Our services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Computer Repairs</h3>
+                <p>Speed up your laptop or desktop, recover lost data, or replacecracked screens.</p>
+            </div>
+            <div class="service-card">
+                <h3>IT Support and Networking</h3>
+                <p>Software and on-site support for home and small businesses.</p>
+            </div>
+            <div class="service-card">
+                <h3>Cloud & Backup Solutions</h3>
+                <p>Secure your data with our reliable cloud backup services.</p>
+            </div>
+            <div class="service-card">
+                <h3> Remote Installation & Troubleshooting</h3>
+                <p>We've got you covered-from software installs to complex systems!</p>
             </div>
         </div>
-    </nav>
-    
-    <header class="theme-dark text-center-mobile">
-        <div class="container-text w-1140px">
-            <h1>Portfolio</h1>
-            <h2>Below you can see a selection of my web design and front-end development projects.</h2>
-        </div>
-        
-    </header><!-- header ends here -->
-        
-        
-    <!-- main content with sections -->
-    <main>
+    </section>
 
-	<!-- section starts here -->
-	<section class="theme-dark section-selector-1 w-1356px">
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <blockquote>
+            "AndriusTech saved my laptop! Quick, affordable, and friendly service. Highly recommend!" - Sarah K., Clondalkin
+        </blockquote>
+        <blockquote>
+            "Excellent IT support for my small business. They set up our network and provide ongoing help." - John D., Tallaght
+        </blockquote>
+    </section>
 
-		<!-- Begin three-column flexbox grid -->
-		<div class="flex-cols-3">
+    <footer>
+    <p>&copy; 2025 AndriusTech. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/andrius.K79">
+            <img src="images/facebook.png" alt="Facebook Icon">
+        </a>
+        <a href="https://ie.linkedin.com/in/andriuskarpas">
+            <img src="images/linkedin.png" alt="LinkedIn Icon">
+        </a>  
+    </div>
+</footer>
 
-			<div class="col-3">
-				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
-					<a href="smoothies/index.html"><img src="../assets/img/project-smoothie.jpg" alt="Placeholder image"></a>
-				</figure>
-				<h3>Smooth Smoothies</h3>
-				<p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</p>
-				<a href="smoothies/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
-			</div>
-
-			<div class="col-3">
-				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
-					<a href="fashion/index.html"><img src="../assets/img/project-fashion.jpg" alt="Placeholder image"></a>
-				</figure>
-				<h3>Snazzy Fashion</h3>
-				<p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
-				<a href="fashion/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
-			</div>
-
-
-			<div class="col-3">
-				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
-					<a href="crypto-wallet/index.html"><img src="../assets/img/project-crypto-wallet.jpg" alt="Placeholder image"></a>
-				</figure>
-				<h3>Crypto Wallet</h3>
-				<p> A dark-themed responsive single-page website for a fictitious crypto wallet.</p>
-				<a href="crypto-wallet/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
-			</div>
-
-			<div class="col-3">
-				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
-					<a href="website/index.html"><img src="../assets/img/project-andrius-tech.jpg" alt="Placeholder image"></a>
-				</figure>
-				<h3>AndriusTech</h3>
-				<p> A Website Requested By my dad who plans his own IT buissnes.</p>
-				<a href="website/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
-			</div>
-
-		</div> <!-- End three-column flexbox grid -->
-	</section><!-- section ends here -->
-   
-   
-    </main>
-
-    <!-- footer -->
- 
-	<footer class="theme-dark text-center-desktop text-center-mobile">
-
-		<h2>Mantas Karpas</h2>
-
-		<h3>Front-end designer and developer</h3>
-
-		<ul class="footer-links">
-			<li><a href="../index.html">Home</a></li>
-			<li><a href="#">Portfolio</a></li>
-			<li><a href="../store/index.html">Store</a></li>
-            <li><a href="../contact/index.html">Contact</a></li>
-		</ul>
-
-		<ul class="footer-icons">
-			<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-			<li><a href="#" target="_blank"><i class="fab fa-github-square"></i></a></li>
-		</ul>
-
-		<p class="privacy"><a href="/dorset/projects-ui/project-home-checklist/resources/privacy">Privacy &amp; Legal</a></p>
-
-	</footer>
-
-    <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
-
+    <script src="javascript/script.js"></script>
 </body>
 </html>
-
-
-

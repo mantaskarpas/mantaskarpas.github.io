@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AndriusTech | Contact Us</title>
+    <meta name="description" content="Get in touch with AndriusTech for device repairs, IT support, or a free quote. Serving Clondalkin and greater Dublin.">
+    <meta name="keywords" content="contact AndriusTech, book repair, get quote, tech support Dublin">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+    <nav class="navbar">
+         <div class="logo">AndriusTech</div>
+         <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="repairs.html">Repairs</a></li>
+            <li><a href="networking.html">IT Support</a></li>
+            <li><a href="cloud-backup.html">Cloud & Backup</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+    </nav>
+
+    <header>
+        <h1>Contact Us</h1>
+        <p>We're here to help! Reach out to us for any inquiries or support.</p> 
+    </header>
+
+    <section class="contact-form-section">
+        <form id="contact-form" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>   
+        </form>
+    </section>
+
+    <section class="quote-form-section">
+        <h2>Get a Free Quote</h2>   
+        <form id="quote-form"  method="POST">
+        <input type="text" name="device" placeholder="Device Type (e.g. Laptop, iPhone)" required />
+        <textarea name="issue" placeholder="Describe the issue" required></textarea>
+        <input type="email" name="email" placeholder="Your Email" required />
+        <button type="submit">Request Quote</button>
+  </form>
+
+    </section>
+
+    <footer>
+    <p>&copy; 2025 AndriusTech. All rights reserved.</p>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/andrius.K79">
+            <img src="images/facebook.png" alt="Facebook Icon">
+        </a>
+        <a href="https://ie.linkedin.com/in/andriuskarpas">
+            <img src="images/linkedin.png" alt="LinkedIn Icon">
+        </a>  
+    </div>
+</footer>
+
+ <script src="javascript/contact.js"></script>
+</body>
+</html>
