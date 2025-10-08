@@ -388,3 +388,28 @@ footer{
 .social-icons a img:hover {
     transform: scale(1.1);
 }
+
+.testimonials{
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 1rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.testimonials h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.testimonials blockquote{
+    font-style: italic;
+    margin: 1rem 0;
+    padding:0.5rem;
+    border-left: 4px solid #3498db;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
