@@ -25,6 +25,10 @@
   .navbar {
     justify-content: space-between;
   }
+
+  .hamburger{
+    display: flex;
+  }
 }
 /*===================================*/
 
