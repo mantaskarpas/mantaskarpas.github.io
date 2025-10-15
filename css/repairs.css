@@ -226,12 +226,12 @@ body{
     color: white;
 }
 
-.logo{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
+.logo img{
+    height: 60px;
+    width: auto;
+    display: block;
+    filter: brightness(5.5) contrast(5.5);
 }
-
 .nav-links{
     list-style: none;
     display: flex;
@@ -248,6 +248,11 @@ body{
 
 .nav-links li a:hover{
     color: #3498db;
+}
+
+.nav-links li a.active{
+  color: var(--accent-color);
+  font-weight: bold;
 }
 
 /*Hamburger icon hidden by default*/
@@ -346,6 +351,7 @@ header button{
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
+
 .pricing {
     padding: 2rem;
     text-align: center;
@@ -390,4 +396,20 @@ footer{
 
 .social-icons a img:hover {
     transform: scale(1.1);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p{
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+section {
+  border-radius: 1px solid #eee;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }

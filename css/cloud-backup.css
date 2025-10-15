@@ -90,9 +90,11 @@ body {
   color: white;
 }
 
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
+.logo img{
+    height: 60px;
+    width: auto;
+    display: block;
+    filter: brightness(5.5) contrast(5.5);
 }
 
 .nav-links ul {
@@ -436,4 +438,21 @@ footer{
 
 .social-icons a img:hover {
     transform: scale(1.1);
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+.btn button {
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn button:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+html{
+  scroll-behavior: smooth;
 }

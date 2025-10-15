@@ -90,11 +90,6 @@ body {
   color: white;
 }
 
-.logo {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
 .nav-links ul {
   list-style: none;
   display: flex;
@@ -169,6 +164,7 @@ body {
 }
 
 
+
 /*===============================*/
 body{
     font-family: 'Segoe UI', sans-serif;
@@ -187,10 +183,11 @@ body{
     color: white;
 }
 
-.logo{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
+.logo img{
+    height: 60px;
+    width: auto;
+    display: block;
+    filter: brightness(5.5) contrast(5.5);
 }
 
 .nav-links{
@@ -223,11 +220,6 @@ body{
     color: white;
 }
 
-.logo{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white;
-}
 
 .nav-links{
     list-style: none;
@@ -245,6 +237,11 @@ body{
 
 .nav-links li a:hover{
     color: #3498db;
+}
+
+.nav-links li a.active{
+  color: var(--accent-color);
+  font-weight: bold;
 }
 
 /*Hamburger icon hidden by default*/
@@ -402,3 +399,37 @@ footer{
 .social-icons a img:hover {
     transform: scale(1.1);
 }
+
+h1, h2, h3 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p{
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+section {
+  border-radius: 1px solid #eee;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+.btn button {
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn button:hover {
+  background: #2980b9;
+  transform: scale(1.05);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
